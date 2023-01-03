@@ -82,7 +82,7 @@ h2,
 .cover-text {
     animation-name: animate-cover-text;
     animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
-    animation-duration: 0.5s;
+    animation-duration: 1.0s;
 }
 
 @keyframes animate-cover-text {
@@ -98,7 +98,7 @@ h2,
 }
 
 .cover-text {
-    color: #fff;
+    color:beige;
     font-family: Barlow, sans-serif;
     align-items: center;
     display: flex;
@@ -110,14 +110,35 @@ h2,
 
 }
 
+/* practices */
+
+#practices-grid  {
+    display:grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    }
+
+    
+.card-one p {
+    font-weight: bold;
+    padding: 1rem;
+    background-color:aqua;
+    color:pink;
+    border-radius: 5px;
+
+}
+
+.card-two p {
+    font-weight: bold;
+    padding: 1rem;
+    background-color:rgb(0, 255, 55);
+    color:pink;
+    border-radius: 5px;
+}
 
 
 
 
 
 
-
-/*.cover-text {
-display: flex;
-flex-wrap: wrap;
-align-content: space-around;*/
