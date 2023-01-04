@@ -73,9 +73,10 @@ h2,
 
 
 #hero-image {
-    height: 800px;
+    height: 700px;
     width: 100%;
-    background: url('../images/hero-image-1920.jpg') no-repeat center center;
+    background: url('../images/hero-image-new.jpg') no-repeat center center;
+    background-size: cover;
     margin: 0;
 }
 
@@ -98,11 +99,11 @@ h2,
 }
 
 .cover-text {
-    color:beige;
+    color:#DBE7F6;
     font-family: Barlow, sans-serif;
     align-items: center;
     display: flex;
-    font-size: 400%;
+    font-size: 300%;
     height: 100vh;
     justify-content: center;
     text-align: center;
@@ -115,25 +116,41 @@ h2,
 #practices-grid  {
     display:grid;
     gap: 1.5rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
     }
 
     
-.card-one p {
+.card-one  {
     font-weight: bold;
     padding: 1rem;
-    background-color:aqua;
-    color:pink;
+    background-color:#D08E4F;
+    color:#DBE7F6;
     border-radius: 5px;
 
 }
 
-.card-two p {
+.card-two  {
     font-weight: bold;
     padding: 1rem;
-    background-color:rgb(0, 255, 55);
-    color:pink;
+    background-color:#853719;
+    color:#DBE7F6;
+    border-radius: 5px;
+}
+
+.card-three  {
+    font-weight: bold;
+    padding: 1rem;
+    background-color:#D08E4F;
+    color:#DBE7F6;
+    border-radius: 5px;
+}
+
+.card-four  {
+    font-weight: bold;
+    padding: 1rem;
+    background-color:#853719;
+    color:#DBE7F6;
     border-radius: 5px;
 }
 
