@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Lato:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Lato&display=swap" rel="stylesheet");
 
 * {
     margin: 0;
@@ -26,6 +26,8 @@ h2,
 #logo {
     float: left;
     font-size: 350%;
+    font-family: Lato, sans-serif;
+    font-weight:500;
 }
 
 /*navigation links*/
@@ -136,7 +138,6 @@ h2,
 
     
 .card-one  {
-    font-weight: bold;
     font-size: 125%;
     padding: 1rem;
     background-color:#D08E4F;
@@ -147,7 +148,6 @@ h2,
 }
 
 .card-two  {
-    font-weight: bold;
     font-size: 125%;
     padding: 1rem;
     background-color:#853719;
@@ -156,7 +156,6 @@ h2,
 }
 
 .card-three  {
-    font-weight: bold;
     font-size: 125%;
     padding: 1rem;
     background-color:#D08E4F;
@@ -165,19 +164,23 @@ h2,
 }
 
 .card-four  {
-    font-weight: bold;
     font-size: 125%;
     padding: 1rem;
     background-color:#853719;
     color:#DBE7F6;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 #practices-grid h2 {
-    margin-bottom: 0.5em;
-    font-weight: bolder;
+    margin-bottom: 0.20em;
+    
 }
 
+hr {
+    border-bottom: 2px solid #DBE7F6;
+}
+
+/*Footer */
 
 
 
