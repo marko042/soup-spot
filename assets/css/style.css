@@ -188,6 +188,61 @@ h2,
     border-bottom: 2px solid #DBE7F6;
 }
 
+/* why soup grid */
+
+
+#why-soup-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-right: 30px;
+
+}
+
+
+.card-five {
+    font-size: 125%;
+    padding: 1rem;
+    background-color: #853719;
+    color: #DBE7F6;
+    border-radius: 5px;
+    margin-left: 2rem;
+
+}
+
+.card-six {
+    font-size: 125%;
+    padding: 1rem;
+    background-color: #D08E4F;
+    color: #DBE7F6;
+    border-radius: 5px;
+}
+
+.card-seven {
+    font-size: 125%;
+    padding: 1rem;
+    background-color: #853719;
+    color: #DBE7F6;
+    border-radius: 5px;
+}
+
+.card-eight {
+    font-size: 125%;
+    padding: 1rem;
+    background-color: #D08E4F;
+    color: #DBE7F6;
+    border-radius: 8px;
+}
+
+#why-soup-grid h2 {
+    margin-bottom: 0.20em;
+
+}
+
+#why-soup-grid hr {
+    border-bottom: 2px solid #DBE7F6;
+}
+
 
 /* footer section */
 
@@ -212,6 +267,7 @@ h2,
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 125%;
+    letter-spacing: 4px;
     white-space: nowrap;
     
 
@@ -226,7 +282,7 @@ h2,
 .footer-section a, li {
     list-style-type: none;
     text-decoration: none;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     white-space: nowrap;
     
     
