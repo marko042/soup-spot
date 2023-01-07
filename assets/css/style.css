@@ -216,6 +216,18 @@ h2 {
 
 /* why soup grid */
 
+#tagline-two {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    color: #3A4323;
+    /*text-transform: uppercase;*/
+    font-family: Barlow, sans-serif;
+    font-size: 280%;
+    letter-spacing: 2px;
+}
+
 
 #why-soup-grid {
     display: grid;
@@ -283,7 +295,7 @@ h2 {
     padding-bottom: 7.5%;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 25%;
-    background-color:#3A4323;
+    background-color: #3A4323;
     opacity: 0.9;
     color: white;
     border-radius: 5px;
@@ -309,6 +321,8 @@ li {
     text-decoration: none;
     letter-spacing: 4px;
     white-space: nowrap;
+    margin-bottom: 5px;
+
 
 
 }
@@ -331,16 +345,16 @@ li {
     gap: 1rem;
 
     /* 1 too skinny, too much code */
-    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
-  
-    /* 2 cleaner code */
-    /* grid-template-columns: repeat(12, 1fr); */
-  
-    /* 3  better sizing, but overflows */
-    /* grid-template-columns: repeat(12, minmax(240px, 1fr)); */
-  
-    /* 4 final */
-    /*grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+
+/* 2 cleaner code */
+/* grid-template-columns: repeat(12, 1fr); */
+
+/* 3  better sizing, but overflows */
+/* grid-template-columns: repeat(12, minmax(240px, 1fr)); */
+
+/* 4 final */
+/*grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
  }
 
 .menu-card {
@@ -366,16 +380,14 @@ li {
 .menu-card:hover {
     box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
     transform: translateY(-3px) scale(1.1);
- }*/*/
-
- 
-  .photos {
+ }*/
+*/ .photos {
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
 
-  }
+}
 
-  .card-images {
+.card-images {
     width: 100%;
-  }
+}
