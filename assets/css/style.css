@@ -112,7 +112,7 @@ h2 {
 .cover-text-box {
     animation-name: cover-element-pop;
     animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
-    animation-duration: 0.5s;
+    animation-duration: 1s;
 }
 
 @keyframes cover-element-pop {
@@ -142,147 +142,51 @@ h2 {
 
 /* practices grid */
 
-#tagline {
+.eight-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 4rem;
+    margin-left: 2rem;
+}
 
+.eight-cards {
+    background-color: #D08E4F;
+    margin-top: 4.6875rem;
+    padding: 0.5rem;
+    box-shadow: 0 .25rem 1rem #853719;
+    border-radius: 5px;
+
+}
+
+.eight-cards-title {
+    color: #DBE7F6;
+    font-size: 150%;
+}
+
+.eight-cards-content {
+    color: #DBE7F6;
+    font-size: 115%;
+}
+
+.eight-cards-tagline-one {
     width: 100%;
-    height: 75px;
-    line-height: 75px;
+    margin-top: 50px;
     text-align: center;
-    color: #3A4323;
-    /*text-transform: uppercase;*/
-    font-family: Barlow, sans-serif;
+    color: black;
+    text-shadow: 2px 2px 5px #853719;
+    text-transform: uppercase;
+    /*font-family: Barlow, sans-serif;*/
     font-size: 280%;
     letter-spacing: 2px;
 
-
-
 }
 
 
-#practices-grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-right: 30px;
-
-}
 
 
-.card-one {
-    font-size: 125%;
-    padding: 1rem;
-    background-color: #D08E4F;
-    color: #DBE7F6;
-    border-radius: 5px;
-    margin-left: 2rem;
-
-}
-
-.card-two {
-    font-size: 125%;
-    padding: 1rem;
-    background-color: #853719;
-    color: #DBE7F6;
-    border-radius: 5px;
-}
-
-.card-three {
-    font-size: 125%;
-    padding: 1rem;
-    background-color: #D08E4F;
-    color: #DBE7F6;
-    border-radius: 5px;
-}
-
-.card-four {
-    font-size: 125%;
-    padding: 1rem;
-    background-color: #853719;
-    color: #DBE7F6;
-    border-radius: 8px;
-}
-
-#practices-grid h2 {
-    margin-bottom: 0.20em;
-    white-space: nowrap;
-    font-size: 125%;
-    color: #DBE7F6;
-
-}
-
-#practices-grid hr {
-    border-bottom: 2px solid #DBE7F6;
-}
-
-/* why soup grid */
-
-#tagline-two {
-    width: 100%;
-    height: 75px;
-    line-height: 75px;
-    text-align: center;
-    color: #3A4323;
-    /*text-transform: uppercase;*/
-    font-family: Barlow, sans-serif;
-    font-size: 280%;
-    letter-spacing: 2px;
-}
 
 
-#why-soup-grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-right: 30px;
 
-}
-
-
-.card-five {
-    font-size: 125%;
-    padding: 1rem;
-    background-color: #853719;
-    color: #DBE7F6;
-    border-radius: 5px;
-    margin-left: 2rem;
-
-}
-
-.card-six {
-    font-size: 125%;
-    padding: 1rem;
-    background-color: #D08E4F;
-    color: #DBE7F6;
-    border-radius: 5px;
-}
-
-.card-seven {
-    font-size: 125%;
-    padding: 1rem;
-    background-color: #853719;
-    color: #DBE7F6;
-    border-radius: 5px;
-}
-
-.card-eight {
-    font-size: 125%;
-    padding: 1rem;
-    background-color: #D08E4F;
-    color: #DBE7F6;
-    border-radius: 8px;
-}
-
-#why-soup-grid h2 {
-    margin-bottom: 0.20em;
-    white-space: nowrap;
-    font-size: 125%;
-    color: #DBE7F6;
-
-}
-
-#why-soup-grid hr {
-    border-bottom: 2px solid #DBE7F6;
-}
 
 
 /* footer section */
@@ -293,8 +197,10 @@ h2 {
     margin-top: 75px;
     padding-top: 7.5%;
     padding-bottom: 7.5%;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 25%;
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    justify-content: center;
+    gap: 25%;
     background-color: #3A4323;
     opacity: 0.9;
     color: white;
@@ -309,7 +215,7 @@ h2 {
     letter-spacing: 2px;
     font-size: 125%;
     letter-spacing: 4px;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 
 
 }
@@ -320,7 +226,7 @@ li {
     list-style-type: none;
     text-decoration: none;
     letter-spacing: 4px;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     margin-bottom: 5px;
 
 
@@ -334,17 +240,60 @@ li {
 .social-media {
     display: grid;
     grid: 1fr / repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    justify-content: center;
     font-size: 150%;
 }
 
 
-/*menu*/
+/*menu page*/
 
-/*.basic-grid {
+.menu-grid {
     display: grid;
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 4rem;
+    margin-left: 2rem;
+}
 
-    /* 1 too skinny, too much code */
+.card-meals {
+    aspect-ratio: 1 / 1.25;
+
+
+}
+
+.card-content {
+    background: white;
+    align-self: end;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: 0 .25rem 1rem #D08E4F;
+}
+
+.card-meals img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.stacked {
+    display: grid;
+
+}
+
+.stacked> * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+/* media queries*/
+
+
+    
+
+    
+
+
+/* 1 too skinny, too much code */
 /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
 
 /* 2 cleaner code */
@@ -354,16 +303,16 @@ li {
 /* grid-template-columns: repeat(12, minmax(240px, 1fr)); */
 
 /* 4 final */
-/*grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
- }
+/* grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));*/
 
-.menu-card {
+
+/*.card-meals {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #353535;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #fff;
     box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
     height: 100%;
@@ -377,17 +326,17 @@ li {
     background-repeat: no-repeat;
  }
   
-.menu-card:hover {
+ .menu-grid:hover {
     box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
     transform: translateY(-3px) scale(1.1);
- }*/
-*/ .photos {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
+ }
+    .photos {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
 
-}
+    }
 
-.card-images {
-    width: 100%;
-}
+    .card-images {
+        width: 100%;
+    }*/
