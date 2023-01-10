@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     border: none;
 }
 
@@ -10,6 +11,10 @@ body {
     font-family: Lato, sans-serif;
     font-weight: 300;
     color: black;
+    display: grid;
+    justify-content: end;
+    align-content: flex-end;
+    min-height: 100vh;
 }
 
 /*headings and logo*/
@@ -181,23 +186,159 @@ h2 {
 
 }
 
-
-
-
-
-
-
-
-
 /* footer section */
 
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    padding: 50px 100px;
+    background-color: #853719;
+}
 
-.footer-section {
+footer .footer-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+
+}
+
+footer .footer-container .sec h2 {
+    position: relative;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .footer-container .sec h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #D08E4F;
+
+}
+
+footer .footer-container .sec p {
+    color: white;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    gap: 10px;
+
+
+}
+
+.social-links li {
+    list-style: none;
+
+}
+
+.social-links li a {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: #853719;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.social-links li a:hover {
+    background: #D08E4F;
+}
+
+
+
+.social-links li a .fa {
+    color: white;
+    font-size: 20px;
+
+}
+
+.quick-links {
+    position: relative;
+}
+
+.quick-links li {
+    list-style: none;
+}
+
+.quick-links li a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.quick-links li a:hover {
+    color: #D08E4F;
+}
+
+.contact-info {
+    position: relative;
+}
+
+.contact-info li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+
+}
+
+.contact-info li span:nth-child(1) {
+    color: white;
+    
+
+}
+
+
+
+.contact-info li span {
+    color: white;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #D08E4F
+}
+
+.copyright-txt {
+    width: 100%;
+    background:#853719;
+    padding: 8px 100px;
+    text-align: left;
+}
+
+
+/*make it responsive*/
+
+
+
+
+
+
+
+/*.footer-section {
     display: grid;
     margin-top: 75px;
     padding-top: 7.5%;
     padding-bottom: 7.5%;
-    /*grid-template-columns: 1fr 1fr 1fr;*/
+    /*grid-template-columns: 1fr 1fr 1fr;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     justify-content: center;
     gap: 25%;
@@ -215,7 +356,7 @@ h2 {
     letter-spacing: 2px;
     font-size: 125%;
     letter-spacing: 4px;
-    /*white-space: nowrap;*/
+    /*white-space: nowrap;
 
 
 }
@@ -226,7 +367,7 @@ li {
     list-style-type: none;
     text-decoration: none;
     letter-spacing: 4px;
-    /*white-space: nowrap;*/
+    /*white-space: nowrap;
     margin-bottom: 5px;
 
 
@@ -243,14 +384,14 @@ li {
     grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
     justify-content: center;
     font-size: 150%;
-}
+}*/
 
 
 /*menu page*/
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 4rem;
     margin-left: 2rem;
 }
@@ -280,7 +421,7 @@ li {
 
 }
 
-.stacked> * {
+.stacked>* {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
@@ -288,55 +429,8 @@ li {
 /* media queries*/
 
 
-    
-
-    
 
 
-/* 1 too skinny, too much code */
-/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
-
-/* 2 cleaner code */
-/* grid-template-columns: repeat(12, 1fr); */
-
-/* 3  better sizing, but overflows */
-/* grid-template-columns: repeat(12, minmax(240px, 1fr)); */
-
-/* 4 final */
-/* grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));*/
 
 
-/*.card-meals {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #353535;
-    font-size: 2rem;
-    color: #fff;
-    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
-    height: 100%;
-    width: 100%;
-    border-radius: 4px;
-    transition: all 500ms;
-    overflow: hidden;
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
- }
-  
- .menu-grid:hover {
-    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
-    transform: translateY(-3px) scale(1.1);
- }
-    .photos {
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: 1fr 1fr 1fr;
-
-    }
-
-    .card-images {
-        width: 100%;
-    }*/
