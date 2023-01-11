@@ -297,10 +297,7 @@ footer .footer-container .sec p {
 
 .contact-info li span:nth-child(1) {
     color: white;
-
-
 }
-
 
 
 .contact-info li span {
@@ -330,7 +327,7 @@ footer .footer-container .sec p {
 @media screen and (max-width: 750px) {
     #menu {
         flex-direction: row;
-        align-items:center;
+        align-items: center;
         line-height: 160px;
 
     }
@@ -343,7 +340,7 @@ footer .footer-container .sec p {
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
     gap: 4rem;
     margin-left: 2rem;
 }
@@ -378,4 +375,64 @@ footer .footer-container .sec p {
     grid-row: 1 / 2;
 }
 
-/* media queries*/
+/* contact page*/
+
+
+.get-in-touch-text h2 {
+    padding: 40px 0;
+
+}
+
+.get-in-touch-text {
+    text-align: center;
+    font-size: 150%;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    font-family: Lato, sans-serif;
+    color: black;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background: #D08E4F;
+    box-shadow: 0 .25rem 1rem #853719;
+
+}
+
+.form-submit-button {
+    width: 100px;
+    height: 30px;
+    background-color: #eeeeee;
+    color: black;
+    display: block;
+    margin-top: 1rem;
+   
+
+    
+}
+
+fieldset {
+
+    padding: 5px;
+    margin: 2rem;
+    border: none;
+}
+
+.map-element iframe {  /*not responsive, need to fix */
+    padding: 2rem;
+    height: 100%;
+    
+    
+}
+
+.text-input {
+    width: 50%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid white;
+    border-radius: 2px;
+}
