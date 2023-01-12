@@ -11,10 +11,7 @@ body {
     font-family: Lato, sans-serif;
     font-weight: 300;
     color: black;
-    /*display: grid;
-    justify-content: end;
-    align-content: flex-end;
-    min-height: 100vh;*/
+    
 }
 
 /*headings and logo*/
@@ -30,11 +27,16 @@ h2 {
 
 #logo {
     float: left;
-    font-size: 350%;
+    font-size: 300%;
     font-family: Lato, sans-serif;
     font-weight: 500;
-    margin-top: 5px;
+    margin-top: auto;
 }
+
+.fa-solid {
+    margin-top: 10px;
+}
+
 
 /*navigation links*/
 
@@ -102,10 +104,10 @@ h2 {
 
 .cover-text-box h2 {
 
-    width: 30%;
+    width: 35%;
     height: 100px;
     margin: 300px 0 0;
-    padding: 4px;
+    padding: 5px;
     background-color: #DBE7F6;
     text-align: center;
     opacity: 0.6;
@@ -148,10 +150,11 @@ h2 {
 
 .eight-cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 4rem;
     margin-left: 2rem;
     margin-right: 2rem;
+    grid
 }
 
 .eight-cards {
@@ -165,12 +168,12 @@ h2 {
 
 .eight-cards-title {
     color: #DBE7F6;
-    font-size: 150%;
+    font-size: 125%;
 }
 
 .eight-cards-content {
     color: #DBE7F6;
-    font-size: 115%;
+    font-size: 110%;
 }
 
 .eight-cards-tagline-one {
@@ -321,6 +324,8 @@ footer .footer-container .sec p {
     background: #853719;
     padding: 8px 100px;
     text-align: left;
+    white-space: nowrap;
+
 }
 
 
@@ -328,7 +333,7 @@ footer .footer-container .sec p {
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     gap: 4rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -447,11 +452,20 @@ fieldset {
 
 @media screen and (max-width: 410px) {
     #logo {
-        font-size: 250%;
+        font-size: 230%;
+
     }
 }
 
 @media screen and (max-width: 410px) {
+    .fa-solid {
+        font-size: 90%;
+        margin-top: 20px;
+
+    }
+}
+
+@media screen and (max-width: 520px) {
     #your-message {
         width: 200px;
         height: 128px;
@@ -465,3 +479,39 @@ fieldset {
     }
 
 }
+
+@media screen and (max-width: 640px) {
+
+    footer {
+        padding: 50px 40px;
+
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+
+    .eight-cards-tagline-one {
+
+        font-size: 200%;
+
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .eight-cards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+        
+        
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .copyright-txt {
+        font-size: 60%;
+
+    }
+}
+
+
+    
