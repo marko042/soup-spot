@@ -11,10 +11,10 @@ body {
     font-family: Lato, sans-serif;
     font-weight: 300;
     color: black;
-    display: grid;
+    /*display: grid;
     justify-content: end;
     align-content: flex-end;
-    min-height: 100vh;
+    min-height: 100vh;*/
 }
 
 /*headings and logo*/
@@ -107,7 +107,7 @@ h2 {
     margin: 300px 0 0;
     padding: 4px;
     background-color: #DBE7F6;
-    text-align:center;
+    text-align: center;
     opacity: 0.6;
     border-radius: 5px;
 
@@ -148,7 +148,7 @@ h2 {
 
 .eight-cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
     gap: 4rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -190,7 +190,7 @@ h2 {
 
 footer {
     position: relative;
-    width: 100%;
+    width: auto;
     height: auto;
     margin-top: 30px;
     padding: 50px 100px;
@@ -202,6 +202,7 @@ footer .footer-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
     gap: 1rem;
+    margin-right: 2rem;
 
 }
 
@@ -330,6 +331,7 @@ footer .footer-container .sec p {
     grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
     gap: 4rem;
     margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .card-meals {
@@ -354,7 +356,7 @@ footer .footer-container .sec p {
 
 .card-price {
     padding: 5px;
-    font-weight:bold;
+    font-weight: bold;
 
 
 }
@@ -439,7 +441,27 @@ fieldset {
         flex-direction: row;
         justify-self: flex-start;
         line-height: 180px;
-        
+
     }
 }
 
+@media screen and (max-width: 410px) {
+    #logo {
+        font-size: 250%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    #your-message {
+        width: 200px;
+        height: 128px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .cover-text-box h2 {
+        font-size: 85%;
+        height: 90px;
+    }
+
+}
