@@ -11,7 +11,7 @@ body {
     font-family: Lato, sans-serif;
     font-weight: 300;
     color: black;
-    
+
 }
 
 /*headings and logo*/
@@ -31,6 +31,7 @@ h2 {
     font-family: Lato, sans-serif;
     font-weight: 500;
     margin-top: auto;
+    text-shadow: 2px 2px 5px #D08E4F
 }
 
 .fa-solid {
@@ -146,7 +147,7 @@ h2 {
 
 }
 
-/* practices grid */
+/*  eight cards grid */
 
 .eight-cards-grid {
     display: grid;
@@ -230,6 +231,15 @@ footer .footer-container .sec h2::before {
 footer .footer-container .sec p {
     color: white;
     padding-right: 20px;
+}
+
+footer .footer-container .sec li {
+    position: relative;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 15px;
+    white-space: normal;
+
 }
 
 .social-links {
@@ -331,9 +341,22 @@ footer .footer-container .sec p {
 
 /*menu page*/
 
+
+.menu-tagline h2 {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 5px #853719;
+    text-transform: uppercase;
+    font-size: 200%;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
     gap: 4rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -501,8 +524,8 @@ fieldset {
 @media screen and (max-width: 460px) {
     .eight-cards-grid {
         grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
-        
-        
+
+
     }
 }
 
@@ -512,6 +535,3 @@ fieldset {
 
     }
 }
-
-
-    
