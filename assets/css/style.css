@@ -119,7 +119,7 @@ h2 {
 
 .cover-text-box {
     animation-name: cover-element-pop;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
 
 @keyframes cover-element-pop {
@@ -147,7 +147,7 @@ h2 {
 
 }
 
-/*  eight cards grid */
+/*  Our promise  */
 
 .eight-cards-grid {
     display: grid;
