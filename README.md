@@ -1,108 +1,137 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Soup Spot Website
+[View the live project here.](https://marko042.github.io/soup-spot/)
 
-Welcome marko042,
+This website is about a small restaurant that serves soup. It is designed to be fully responsive on a range of devices.
+Making it simple to navigate for visitors and all interested future customers.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![This is an image](/docs/am-i-responsive.PNG)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# Project goals
+This project main idea is to attract customers to our cozy soup spot where they can take a break from from everyday busy routine have a simple hearty meal and just relax.
+It gives them basic information, like our values, menu list,  location including all the popular ways to contact us as well as a page to leave your comments and thoughts.
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Existing features
+- Navigation Bar
+    - The website contains 3 pages including links to the Logo, Home page, Gallery and Contact. Design is identical for purposes of easy navigation.
+It allows the user to easily navigate  from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
 
-`python3 -m http.server`
+![This is an image](/docs/navigation-bar.PNG)
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+- The landing page image
+    - The landing includes a photograph with text overlay with a tagline that is interactive that way inviting the user to stay on the page.
 
-Another blue button should appear to click: _Open Browser_.
+![This is an image](/docs/landing-page-image.PNG)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+- Values Section
+    - The values section allows the user to see some of our values and main poitns that we focus on  in our bussiness.
+    - More importanly what we as individuals care for give great importance to.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![This is an image](/docs/our-promise.PNG)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- The Footer
+    - The footer section includes links to Social media sites for Soup Spot, they are designed to open in a new tab for ease of navigation for the user
+    - The footer also contains a simple paragraph about us and what makes our place special.
+    - including the basics  like opening hours, address, telephone and email.
 
-------
+![This is an image](/docs/footer-design.PNG)
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- Menu
+    - The menu section contains small format photos of soup that we serve with short description and a price tag.
+    - This section is important because it lets the user know what exactly we offer and keeps them engaged by visually beautiful images of food.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+    ![This is an image](/docs/menu-page.PNG)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+    - The Contact Page
+        - On this page user can find a simple form that enables them to leave a review, comment on their experience
+         and souggest if they feel we can improve or change somehow.
+         - Additionally on this page a interactive map of the location is displayed.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+         ![This is an image](/docs/contact-page.PNG)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+         ## Features left to Implement
+          - in the future we are planning to add more items to our menu, therefore we will have to expand the page.
+          - We will aim to create more detailed menu section which would contain more information presented in a way that users find engaging.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+ # Testing
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+          Testing was performed throughout the entire build. Using Firefox  developer tools while building to pinpoint and troubleshoot any issues as I went along.
+          I've decided on Firefox because it is in my opinion more user friendly when it comes to breaking down grid and flexbox elements.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Validator Testing
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- HTML [ValidatorW3](https://validator.w3.org/)
+    - Two errors were found, that do not affect the functionality or aesthetics of the page. The issue I had was making google map embedded iframe element to scale down and keep the aspect ratio. I found a solution on [Viostream](https://help.viostream.com/frequently-asked-questions/how-do-i-make-an-iframe-embed-responsive/). After implementing the solution,  error I was getting is shown below. I decided to leave it.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![This is an image](/docs/validator-error.PNG)
 
-------
+- CSS [Jigsaw.W3](https://jigsaw.w3.org/css-validator/validator)
+    - The CSS validator did not find any errors in my CSS <p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+</p>
 
-## FAQ about the uptime script
+- Lighthouse 
+    - What does Lighthouse score mean?
+A Google Lighthouse score is the rating Google gives your site based on a combination of performance, accessibility, SEO, and best practice criteria in artificial conditions that mimic real ones. Site's are “graded” based on four buckets of criteria and rated 0 – 100. The higher the score out of 100, the better.
 
-**Why have you added this script?**
+![This is an image](/docs/lighthouse-report.PNG)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- Deployed website was also tested on the following devices with no apparent bugs
+    - Xiaomi Redmi 9 Android
+    - iPhone SE 2016
+    - iPhone 13
+    - MacBook Pro M1
+    - iPad A13
+    - MSI GF63 Thin
+    - Dell P2719H
+    - HP E24 G4
 
-**How will this affect me?**
+- Browsers tested with no significant bugs
+    - Mozilla Firefox
+    - Opera
+    - Chrome
+    - Edge
+    - Brave
+    - Safari
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+    ## Deployment
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+    - The site was deployed to GitHub pages. The steps to deploy are as follows: 
+        - In the GitHub repository, navigate to the Settings tab
+        - From the source section drop-down menu, select the Master Branch
+        - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+        The live link can be found on [Soup-Spot](https://marko042.github.io/soup-spot/) 
 
-**So….?**
+## Credits
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+In this section I will to best of my abilities and most comprehensively list all the resources that contributed in any way to building this website.
 
-**Can I opt out?**
+# Content
+ - the development of the footer section was inspired by [Responsive Footer Design Using Html & CSS Grid | HTML CSS Footer](https://www.youtube.com/watch?v=g-HY5peTHcs)
+ - @keyframes cover-element-pop CSS element was inspired by [Animating your Hero Header](https://cssanimation.rocks/animating-hero-header/)
+ - Menu page grid layout was inspired by brilliant Kevin Powell on [Learn how to create a responsive CSS grid layout](https://www.youtube.com/watch?v=sKFW3wek21Q)
+ - All of the icons used were taken from [Font Awesome](https://fontawesome.com/)
+ - [Google Fonts](https://fonts.google.com/) was facilitated for all the font needs.
+ - Color palette courtesy of [Canva](https://www.canva.com/)
+    - ![This is an image](/docs/color-palette-canva.PNG)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+      
+# Media
+ - The photos and images used throughout the website can be found on [Unsplash](https://unsplash.com/) & [Pexels](https://www.pexels.com/)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
